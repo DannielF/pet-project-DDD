@@ -20,6 +20,7 @@ public class ReceiptEventChange extends EventChange {
     public ReceiptEventChange(Receipt receipt) {
         apply((ReceiptCreated event) -> {
             receipt.shopId = event.shopId();
+            receipt.trolleyId = event.trolleyId();
             receipt.date = event.date();
         });
 

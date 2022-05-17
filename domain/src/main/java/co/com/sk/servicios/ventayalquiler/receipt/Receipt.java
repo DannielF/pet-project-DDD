@@ -36,9 +36,9 @@ public class Receipt extends AggregateEvent<ReceiptId> {
     protected Payment payment;
     protected DateReceipt date;
 
-    public Receipt(ReceiptId receiptId, ShopId shopId, DateReceipt date) {
+    public Receipt(ReceiptId receiptId, ShopId shopId, TrolleyId trolleyId, DateReceipt date) {
         super(receiptId);
-        appendChange(new ReceiptCreated(shopId, date)).apply();
+        appendChange(new ReceiptCreated(shopId, trolleyId, date)).apply();
         subscribe(new ReceiptEventChange(this));
     }
 
