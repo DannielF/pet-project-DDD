@@ -1,11 +1,6 @@
 package co.com.sk.servicos.ventayalquiler.shop.commands;
 
-import co.com.sk.servicos.shop.values.*;
-import co.com.sk.servicos.ventayalquiler.shop.values.CashierEmployeeId;
-import co.com.sk.servicos.ventayalquiler.shop.values.EmployeeName;
-import co.com.sk.servicos.ventayalquiler.shop.values.Function;
-import co.com.sk.servicos.ventayalquiler.shop.values.Mail;
-import co.com.sk.servicos.ventayalquiler.shop.values.ShopId;
+import co.com.sk.servicos.ventayalquiler.shop.values.*;
 import co.com.sofka.domain.generic.Command;
 
 //Crear cajero Empleado
