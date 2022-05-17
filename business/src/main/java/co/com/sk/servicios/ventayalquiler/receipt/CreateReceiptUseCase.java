@@ -11,7 +11,7 @@ public class CreateReceiptUseCase extends UseCase<RequestCommand<CreateReceipt>,
     public void executeUseCase(RequestCommand<CreateReceipt> receiptRequestCommand) {
         var command = receiptRequestCommand.getCommand();
 
-        var receipt = new Receipt(command.receiptId(), command.date());
+        var receipt = new Receipt(command.receiptId(), command.shopId(), command.date());
 
         emit().onResponse(new ResponseEvents(receipt.getUncommittedChanges()));
     }

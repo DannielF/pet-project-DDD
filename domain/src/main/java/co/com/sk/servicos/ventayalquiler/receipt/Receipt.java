@@ -15,6 +15,7 @@ import co.com.sk.servicos.ventayalquiler.receipt.values.PaymentId;
 import co.com.sk.servicos.ventayalquiler.receipt.values.Phone;
 import co.com.sk.servicos.ventayalquiler.receipt.values.ReceiptId;
 import co.com.sk.servicos.ventayalquiler.receipt.values.Type;
+import co.com.sk.servicos.ventayalquiler.shop.values.ShopId;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 
@@ -28,15 +29,15 @@ import java.util.List;
  */
 public class Receipt extends AggregateEvent<ReceiptId> {
 
-    //protected Store store;
-    //protected ShoppingCar shoppingCar;
+    protected ShopId shopId;
+    //protected ShoppingCar shoppingCarId;
     protected Client client;
     protected Payment payment;
     protected DateReceipt date;
 
-    public Receipt(ReceiptId receiptId, DateReceipt date) {
+    public Receipt(ReceiptId receiptId, ShopId shopId, DateReceipt date) {
         super(receiptId);
-        appendChange(new ReceiptCreated(date)).apply();
+        appendChange(new ReceiptCreated(shopId,date)).apply();
         subscribe(new ReceiptEventChange(this));
     }
 

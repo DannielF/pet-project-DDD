@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Upd] docs [Fix] typos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+    <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Upd] Trolley package inside ventayalquiler package">
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/CreateReceipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/CreateReceipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ReceiptCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ReceiptCreated.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +32,25 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29GZpzhUdJUPcVSaa4UwYVPSDWZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="co.com.sk.servicos.ventayalquiler.receipt.events" />
@@ -61,7 +66,7 @@
       <recent name="co.com.sk.servicios.ventayalquiler.receipt" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReceiptTest.createReceipt">
+  <component name="RunManager" selected="JUnit.CreateReceiptUseCaseTest.createReceipt">
     <configuration name="CreateReceiptUseCaseTest.createReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -96,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReceiptTest.createReceipt" />
         <item itemvalue="JUnit.CreateReceiptUseCaseTest.createReceipt" />
+        <item itemvalue="JUnit.ReceiptTest.createReceipt" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +208,7 @@
     <MESSAGE value="[Add] package Receipt, event and commands client in Receipt" />
     <MESSAGE value="[Add] CreateReceiptUseCaseTest ReceiptCreated passed" />
     <MESSAGE value="[Upd] docs [Fix] typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Upd] docs [Fix] typos" />
+    <MESSAGE value="[Upd] Trolley package inside ventayalquiler package" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Upd] Trolley package inside ventayalquiler package" />
   </component>
 </project>

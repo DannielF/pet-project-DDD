@@ -19,6 +19,7 @@ import co.com.sofka.domain.generic.EventChange;
 public class ReceiptEventChange extends EventChange {
     public ReceiptEventChange(Receipt receipt) {
         apply((ReceiptCreated event) -> {
+            receipt.shopId = event.shopId();
             receipt.date = event.date();
         });
 
