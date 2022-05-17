@@ -20,4 +20,15 @@ public class Payment extends Entity<PaymentId> {
         super(entityId);
         this.type = Validate.notNull(type, "There's must be a value");
     }
+
+    /**
+     * Update type
+     * @param type Object
+     */
+    public void updateType(Type type) {
+        if (type.value().isBlank()) {
+            throw new IllegalArgumentException("Cannot be empty");
+        }
+        this.type = type;
+    }
 }
