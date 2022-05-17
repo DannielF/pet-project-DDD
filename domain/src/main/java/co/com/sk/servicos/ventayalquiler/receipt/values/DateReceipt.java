@@ -1,4 +1,4 @@
-package co.com.sk.servicos.ventayalquiler.values;
+package co.com.sk.servicos.ventayalquiler.receipt.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 import org.apache.commons.lang3.Validate;

@@ -1,7 +1,7 @@
-package co.com.sk.servicos.ventayalquiler.events;
+package co.com.sk.servicos.ventayalquiler.receipt.events;
 
-import co.com.sk.servicos.ventayalquiler.values.PaymentId;
-import co.com.sk.servicos.ventayalquiler.values.Type;
+import co.com.sk.servicos.ventayalquiler.receipt.values.PaymentId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Type;
 import co.com.sofka.domain.generic.DomainEvent;
 
 /**

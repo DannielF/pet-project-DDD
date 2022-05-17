@@ -1,9 +1,9 @@
-package co.com.sk.servicos.ventayalquiler;
+package co.com.sk.servicos.ventayalquiler.receipt;
 
-import co.com.sk.servicos.ventayalquiler.values.ClientId;
-import co.com.sk.servicos.ventayalquiler.values.Email;
-import co.com.sk.servicos.ventayalquiler.values.Name;
-import co.com.sk.servicos.ventayalquiler.values.Phone;
+import co.com.sk.servicos.ventayalquiler.receipt.values.ClientId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Email;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Name;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Phone;
 import co.com.sofka.domain.generic.Entity;
 import org.apache.commons.lang3.Validate;
 

@@ -1,17 +1,20 @@
-package co.com.sk.servicos.ventayalquiler;
+package co.com.sk.servicos.ventayalquiler.receipt;
 
-import co.com.sk.servicos.ventayalquiler.events.ClientAdded;
-import co.com.sk.servicos.ventayalquiler.events.PaymentAdded;
-import co.com.sk.servicos.ventayalquiler.events.ReceiptCreated;
-import co.com.sk.servicos.ventayalquiler.events.TypePaymentUpdated;
-import co.com.sk.servicos.ventayalquiler.values.ClientId;
-import co.com.sk.servicos.ventayalquiler.values.DateReceipt;
-import co.com.sk.servicos.ventayalquiler.values.Email;
-import co.com.sk.servicos.ventayalquiler.values.Name;
-import co.com.sk.servicos.ventayalquiler.values.PaymentId;
-import co.com.sk.servicos.ventayalquiler.values.Phone;
-import co.com.sk.servicos.ventayalquiler.values.ReceiptId;
-import co.com.sk.servicos.ventayalquiler.values.Type;
+import co.com.sk.servicos.ventayalquiler.receipt.events.ClientAdded;
+import co.com.sk.servicos.ventayalquiler.receipt.events.ClientEmailUpdated;
+import co.com.sk.servicos.ventayalquiler.receipt.events.ClientNameUpdated;
+import co.com.sk.servicos.ventayalquiler.receipt.events.ClientPhoneUpdated;
+import co.com.sk.servicos.ventayalquiler.receipt.events.PaymentAdded;
+import co.com.sk.servicos.ventayalquiler.receipt.events.ReceiptCreated;
+import co.com.sk.servicos.ventayalquiler.receipt.events.TypePaymentUpdated;
+import co.com.sk.servicos.ventayalquiler.receipt.values.ClientId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.DateReceipt;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Email;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Name;
+import co.com.sk.servicos.ventayalquiler.receipt.values.PaymentId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Phone;
+import co.com.sk.servicos.ventayalquiler.receipt.values.ReceiptId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Type;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 
@@ -55,6 +58,18 @@ public class Receipt extends AggregateEvent<ReceiptId> {
 
     public void updateTypePayment(PaymentId paymentId, Type type) {
         appendChange(new TypePaymentUpdated(paymentId, type)).apply();
+    }
+
+    public void updateClientName(ClientId clientId, Name name) {
+        appendChange(new ClientNameUpdated(clientId, name)).apply();
+    }
+
+    public void updateClientPhone(ClientId clientId, Phone phone) {
+        appendChange(new ClientPhoneUpdated(clientId, phone)).apply();
+    }
+
+    public void updateClientEmail(ClientId clientId, Email email) {
+        appendChange(new ClientEmailUpdated(clientId, email)).apply();
     }
 
     public Payment payment() {

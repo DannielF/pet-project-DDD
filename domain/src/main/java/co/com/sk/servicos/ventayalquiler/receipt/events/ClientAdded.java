@@ -1,9 +1,9 @@
-package co.com.sk.servicos.ventayalquiler.events;
+package co.com.sk.servicos.ventayalquiler.receipt.events;
 
-import co.com.sk.servicos.ventayalquiler.values.ClientId;
-import co.com.sk.servicos.ventayalquiler.values.Email;
-import co.com.sk.servicos.ventayalquiler.values.Name;
-import co.com.sk.servicos.ventayalquiler.values.Phone;
+import co.com.sk.servicos.ventayalquiler.receipt.values.ClientId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Email;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Name;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Phone;
 import co.com.sofka.domain.generic.DomainEvent;
 
 /**

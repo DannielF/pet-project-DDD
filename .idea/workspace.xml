@@ -4,13 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Add] TypePaymentUpdated to Receipt and ReceiptEventChange">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/events/PaymentAdded.java" afterDir="false" />
+    <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Add] package Receipt, event and commands client in Receipt">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/AddClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/AddPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/CreateReceipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateTypePayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientEmailUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientNameUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientPhoneUpdated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/ReceiptEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/ReceiptEventChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/events/templateEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/ReceiptEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/commands/templateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/events/ClientAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientAdded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/events/PaymentAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/PaymentAdded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/events/ReceiptCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ReceiptCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/events/TypePaymentUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/TypePaymentUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/ClientId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/ClientId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/DateReceipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/DateReceipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/PaymentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/PaymentId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/ReceiptId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/ReceiptId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/values/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Type.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +70,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="co.com.sk.servicos.ventayalquiler.receipt.events" />
       <recent name="co.com.sk.servicos.ventayalquiler.events" />
       <recent name="co.com.sk.servicos.ventayalquiler" />
       <recent name="co.com.sk.servicos.ventayalquiler.values" />
@@ -62,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652741570188</updated>
       <workItem from="1652741572652" duration="10772000" />
-      <workItem from="1652793611051" duration="8673000" />
+      <workItem from="1652793611051" duration="12202000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] template project">
       <created>1652742735377</created>
@@ -106,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652800225690</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[Add] PaymentAdded to events">
+      <created>1652802391668</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652802391668</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +160,8 @@
     <MESSAGE value="[Add] some Entities, value objects with validations, Receipt in progress" />
     <MESSAGE value="[Add] Payment Entity, addClient method, ReceiptCreated event" />
     <MESSAGE value="[Add] TypePaymentUpdated to Receipt and ReceiptEventChange" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] TypePaymentUpdated to Receipt and ReceiptEventChange" />
+    <MESSAGE value="[Add] PaymentAdded to events" />
+    <MESSAGE value="[Add] package Receipt, event and commands client in Receipt" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] package Receipt, event and commands client in Receipt" />
   </component>
 </project>

@@ -1,7 +1,7 @@
-package co.com.sk.servicos.ventayalquiler;
+package co.com.sk.servicos.ventayalquiler.receipt;
 
-import co.com.sk.servicos.ventayalquiler.values.PaymentId;
-import co.com.sk.servicos.ventayalquiler.values.Type;
+import co.com.sk.servicos.ventayalquiler.receipt.values.PaymentId;
+import co.com.sk.servicos.ventayalquiler.receipt.values.Type;
 import co.com.sofka.domain.generic.Entity;
 import org.apache.commons.lang3.Validate;
 

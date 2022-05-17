@@ -1,6 +1,6 @@
-package co.com.sk.servicos.ventayalquiler.events;
+package co.com.sk.servicos.ventayalquiler.receipt.events;
 
-import co.com.sk.servicos.ventayalquiler.values.DateReceipt;
+import co.com.sk.servicos.ventayalquiler.receipt.values.DateReceipt;
 import co.com.sofka.domain.generic.DomainEvent;
 
 /**
