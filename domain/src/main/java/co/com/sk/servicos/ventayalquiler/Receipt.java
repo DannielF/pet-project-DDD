@@ -1,6 +1,7 @@
 package co.com.sk.servicos.ventayalquiler;
 
 import co.com.sk.servicos.ventayalquiler.events.ClientAdded;
+import co.com.sk.servicos.ventayalquiler.events.PaymentAdded;
 import co.com.sk.servicos.ventayalquiler.events.ReceiptCreated;
 import co.com.sk.servicos.ventayalquiler.events.TypePaymentUpdated;
 import co.com.sk.servicos.ventayalquiler.values.ClientId;
@@ -16,13 +17,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 
 import java.util.List;
 
-/**
- * Receipt class - Aggregate Root
- *
- * @author dannielf
- * @version 0.0.1
- * @since 0.0.1
- */
+
 public class Receipt extends AggregateEvent<ReceiptId> {
 
     //protected Store store;
@@ -53,8 +48,13 @@ public class Receipt extends AggregateEvent<ReceiptId> {
         appendChange(new ClientAdded(clientId, name, phone, email)).apply();
     }
 
+    public void addPayment(Type type) {
+        var paymentId = new PaymentId("payment1");
+        appendChange(new PaymentAdded(paymentId, type)).apply();
+    }
+
     public void updateTypePayment(PaymentId paymentId, Type type) {
-        appendChange(new TypePaymentUpdated(paymentId ,type)).apply();
+        appendChange(new TypePaymentUpdated(paymentId, type)).apply();
     }
 
     public Payment payment() {
