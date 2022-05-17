@@ -1,7 +1,6 @@
 package co.com.sk.servicios.ventayalquiler.receipt;
 
-import co.com.sk.servicos.ventayalquiler.receipt.Receipt;
-import co.com.sk.servicos.ventayalquiler.receipt.commands.CreateReceipt;
+import co.com.sk.servicios.ventayalquiler.receipt.commands.CreateReceipt;
 import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;

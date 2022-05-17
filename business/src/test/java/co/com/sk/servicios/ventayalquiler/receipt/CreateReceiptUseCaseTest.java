@@ -1,10 +1,10 @@
 package co.com.sk.servicios.ventayalquiler.receipt;
 
-import co.com.sk.servicos.ventayalquiler.receipt.commands.CreateReceipt;
-import co.com.sk.servicos.ventayalquiler.receipt.events.ReceiptCreated;
-import co.com.sk.servicos.ventayalquiler.receipt.values.DateReceipt;
-import co.com.sk.servicos.ventayalquiler.receipt.values.ReceiptId;
-import co.com.sk.servicos.ventayalquiler.shop.values.ShopId;
+import co.com.sk.servicios.ventayalquiler.receipt.commands.CreateReceipt;
+import co.com.sk.servicios.ventayalquiler.receipt.events.ReceiptCreated;
+import co.com.sk.servicios.ventayalquiler.receipt.values.DateReceipt;
+import co.com.sk.servicios.ventayalquiler.receipt.values.ReceiptId;
+import co.com.sk.servicios.ventayalquiler.shop.values.ShopId;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import org.junit.jupiter.api.BeforeEach;
