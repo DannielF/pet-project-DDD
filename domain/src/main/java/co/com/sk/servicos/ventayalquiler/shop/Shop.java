@@ -1,7 +1,5 @@
 package co.com.sk.servicos.ventayalquiler.shop;
 
-import co.com.sk.servicos.shop.events.*;
-import co.com.sk.servicos.shop.values.*;
 import co.com.sk.servicos.ventayalquiler.shop.events.AddressChanged;
 import co.com.sk.servicos.ventayalquiler.shop.events.CashierEmployeeAggregate;
 import co.com.sk.servicos.ventayalquiler.shop.events.FunctionCajeroUpdated;
