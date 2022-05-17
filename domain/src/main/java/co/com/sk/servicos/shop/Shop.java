@@ -17,6 +17,12 @@ public class Shop extends AggregateEvent<ShopId> {
         appendChange(new StoreCreated(storeName,direction)).apply();
     }
 
+    //Subcritor de los eventos
+    private Shop(ShopId entityId){
+        super(entityId);
+        subscribe(new ShopChange(this));
+    }
+
     //Agregando cajero Empleado al agregado root tienda
     public void addCashierEmployee(CashierEmployeeId entityId, EmployeeName employeeName, Mail mail,Function function){
         Objects.requireNonNull(entityId);
