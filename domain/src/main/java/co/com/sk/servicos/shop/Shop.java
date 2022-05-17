@@ -43,7 +43,7 @@ public class Shop extends AggregateEvent<ShopId> {
     }
 
     //Agregar Responsable al agregado root tienda
-    public void addResponsible(ResponsibleId entityId, EmployeeName employeeName, Mail mail, Function function){
+    public void createResponsible(ResponsibleId entityId, EmployeeName employeeName, Mail mail, Function function){
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(employeeName);
         Objects.requireNonNull(mail);
@@ -54,13 +54,13 @@ public class Shop extends AggregateEvent<ShopId> {
 
 
     //Actualizar funciones Cajero Empleado
-    public void updateFeaturesCashier(CashierEmployeeId entityId, Function function){
+    public void updateFunctionCashier(CashierEmployeeId entityId, Function function){
         appendChange(new FunctionCajeroUpdated(entityId,function)).apply();
 
     }
 
     //Actualizar funciones Responsable
-    public void FunctionResponsibleUpdated(ResponsibleId responsibleId, Function function){
+    public void UpdatedFunctionResponsible(ResponsibleId responsibleId, Function function){
         appendChange(new FunctionResponsibleUpdated(responsibleId,function)).apply();
     }
 
