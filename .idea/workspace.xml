@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Add] CreateReceiptUseCaseTest ReceiptCreated passed">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCaseTest.java" afterDir="false" />
+    <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Upd] docs [Fix] typos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/templateBorrar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +57,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="co.com.sk.servicos.ventayalquiler.receipt" />
       <recent name="co.com.sk.servicios.ventayalquiler.receipt" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReceiptTest.createReceipt">
     <configuration name="CreateReceiptUseCaseTest.createReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -80,8 +78,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReceiptTest.createReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.com.sk.servicos.ventayalquiler.receipt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.com.sk.servicos.ventayalquiler.receipt" />
+      <option name="MAIN_CLASS_NAME" value="co.com.sk.servicos.ventayalquiler.receipt.ReceiptTest" />
+      <option name="METHOD_NAME" value="createReceipt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReceiptTest.createReceipt" />
         <item itemvalue="JUnit.CreateReceiptUseCaseTest.createReceipt" />
       </list>
     </recent_temporary>
@@ -95,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652741570188</updated>
       <workItem from="1652741572652" duration="10772000" />
-      <workItem from="1652793611051" duration="15972000" />
+      <workItem from="1652793611051" duration="17888000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] template project">
       <created>1652742735377</created>
@@ -153,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652805823247</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Add] CreateReceiptUseCaseTest ReceiptCreated passed">
+      <created>1652809608840</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652809608840</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +202,7 @@
     <MESSAGE value="[Add] PaymentAdded to events" />
     <MESSAGE value="[Add] package Receipt, event and commands client in Receipt" />
     <MESSAGE value="[Add] CreateReceiptUseCaseTest ReceiptCreated passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] CreateReceiptUseCaseTest ReceiptCreated passed" />
+    <MESSAGE value="[Upd] docs [Fix] typos" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Upd] docs [Fix] typos" />
   </component>
 </project>

@@ -20,7 +20,12 @@ import co.com.sofka.domain.generic.DomainEvent;
 
 import java.util.List;
 
-
+/**
+ * Receipt class - Aggregate root
+ * @author dannielf
+ * @version 0.0.1
+ * @since 0.0.1
+ */
 public class Receipt extends AggregateEvent<ReceiptId> {
 
     //protected Store store;
@@ -29,8 +34,8 @@ public class Receipt extends AggregateEvent<ReceiptId> {
     protected Payment payment;
     protected DateReceipt date;
 
-    public Receipt(ReceiptId entityId, DateReceipt date) {
-        super(entityId);
+    public Receipt(ReceiptId receiptId, DateReceipt date) {
+        super(receiptId);
         appendChange(new ReceiptCreated(date)).apply();
         subscribe(new ReceiptEventChange(this));
     }
