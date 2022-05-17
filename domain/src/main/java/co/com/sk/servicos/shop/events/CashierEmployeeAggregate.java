@@ -15,7 +15,7 @@ public class CashierEmployeeAggregate extends DomainEvent {
     private final Function function;
 
     public CashierEmployeeAggregate(CashierEmployeeId entityId, EmployeeName employeeName, Mail mail,Function function){
-        super("teveo.shop.cashierEmployeeAggregate");
+        super("teveo.shop.cashieremployeeaggregate");
         this.entityId=entityId;
         this.employeeName=employeeName;
         this.mail=mail;
