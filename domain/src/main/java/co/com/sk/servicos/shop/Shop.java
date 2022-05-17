@@ -22,7 +22,7 @@ public class Shop extends AggregateEvent<ShopId> {
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(employeeName);
         Objects.requireNonNull(mail);
-        Objects.requireNonNull(function)
+        Objects.requireNonNull(function);
         appendChange(new CashierEmployeeAggregate(entityId,employeeName,mail,function)).apply();
 
     }
