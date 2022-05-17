@@ -1,4 +1,4 @@
 package co.com.sk.servicos.shop.events;
-//Responsable Agregado
+//Agregar Responsable
 public class ResponsibleAdded {
 }
