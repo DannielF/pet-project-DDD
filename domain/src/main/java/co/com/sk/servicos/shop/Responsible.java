@@ -14,7 +14,7 @@ public class Responsible extends Entity<ResponsibleId> {
     private  Mail mail;
     private Function function;
 
-    public Responsible(ResponsibleId entityId, EmployeeName employeeName, Mail mail,Function function) {
+    public Responsible(ResponsibleId entityId, EmployeeName employeeName, Mail mail, Function function) {
         super(entityId);
         this.employeeName = employeeName;
         this.mail=mail;

@@ -9,7 +9,7 @@ public class FunctionResponsibleUpdated extends DomainEvent {
     private final ResponsibleId responsibleId;
     private final Function function;
 
-    public FunctionResponsibleUpdated(ResponsibleId responsibleId,Function function) {
+    public FunctionResponsibleUpdated(ResponsibleId responsibleId, Function function) {
         super("teveo.shop.functionresponsibleupdate");
         this.responsibleId=responsibleId;
         this.function=function;

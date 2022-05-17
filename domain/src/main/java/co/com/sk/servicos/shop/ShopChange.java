@@ -13,31 +13,37 @@ public class ShopChange extends EventChange {
             shop.direction=event.getDirection();
         });
 
-        //Agregar cajero empleado
+        //Crear cajero empleado
         apply((CashierEmployeeAggregate event)->{
-
+            var newcashierEmployee = new CashierEmployee(event.getEntityId(),event.getEmployeeName(),event.getMail(),event.getFunction());
         });
-        //Agregar Responsable
+        //crear Responsable
         apply((ResponsibleAdded event)->{
-
+            var newResponsible = new Responsible(event.getEntityId(),event.getEmployeeName(),event.getMail(),event.getFunction());
         });
 
         //Actualizar funcion cajero
         apply((FunctionCajeroUpdated event)->{
+            var newfunction = shop.cashierEmployee;
+            newfunction.UpdateFunction(event.getFunction());
 
         });
 
         //Actualizar Funcion Responsable
         apply((FunctionResponsibleUpdated event)->{
+            var newFunction = shop.responsible;
+            newFunction.UpdateFunction(event.getFunction());
 
         });
 
         //Cambiando nombre tienda
         apply((StoreNameChanged event)->{
+            shop.storeName = event.getStoreName();
 
         });
         //Cambiando direccion tienda
         apply((AddressChanged event)->{
+            shop.direction=event.getDirection();
 
         });
 

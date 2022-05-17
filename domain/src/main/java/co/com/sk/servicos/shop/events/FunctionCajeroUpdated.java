@@ -4,8 +4,6 @@ import co.com.sk.servicos.shop.values.CashierEmployeeId;
 import co.com.sk.servicos.shop.values.Function;
 import co.com.sofka.domain.generic.DomainEvent;
 
-import java.util.UUID;
-
 //Cajero Empleado Actualiado
 public class FunctionCajeroUpdated extends DomainEvent {
 

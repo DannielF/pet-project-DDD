@@ -14,7 +14,7 @@ public class CashierEmployee extends Entity<CashierEmployeeId> {
     private Mail mail;
     private Function function;
 
-    public CashierEmployee(CashierEmployeeId entityId, EmployeeName employeeName, Mail mail,Function function) {
+    public CashierEmployee(CashierEmployeeId entityId, EmployeeName employeeName, Mail mail, Function function) {
         super(entityId);
         this.employeeName = employeeName;
         this.mail=mail;

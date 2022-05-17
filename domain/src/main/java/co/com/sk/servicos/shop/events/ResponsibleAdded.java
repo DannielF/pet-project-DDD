@@ -13,7 +13,7 @@ public class ResponsibleAdded extends DomainEvent {
     private final Mail mail;
     private final Function function;
 
-    public ResponsibleAdded(ResponsibleId entityId, EmployeeName employeeName, Mail mail,Function function){
+    public ResponsibleAdded(ResponsibleId entityId, EmployeeName employeeName, Mail mail, Function function){
         super("teveo.shop.responsibleadded");
         this.entityId=entityId;
         this.employeeName=employeeName;
