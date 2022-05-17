@@ -10,9 +10,9 @@ import org.apache.commons.lang3.Validate;
  * @version 0.0.1
  * @since 0.0.1
  */
-public record TotalPrice(String value) implements ValueObject<String> {
+public record TotalPrice(Double value) implements ValueObject<Double> {
 
-    public TotalPrice(String value) {
+    public TotalPrice(Double value) {
         this.value = Validate.notNull(value, "There's must be a value");
     }
 }

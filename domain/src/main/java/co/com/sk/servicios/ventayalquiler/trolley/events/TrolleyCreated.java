@@ -1,7 +1,6 @@
 package co.com.sk.servicios.ventayalquiler.trolley.events;
 
 import co.com.sk.servicios.ventayalquiler.trolley.values.TotalPrice;
-import co.com.sk.servicios.ventayalquiler.trolley.values.TrolleyId;
 import co.com.sofka.domain.generic.DomainEvent;
 /**
  * TrolleyCreated class - Domain event

@@ -38,7 +38,7 @@ public class Film extends Entity<FilmId> {
     }
 
     public void updateDuration(Duration duration) {
-        if (duration.value().isBlank()) {
+        if (duration.value() == null) {
             throw new IllegalArgumentException(VALIDATION_MESSAGE_UPDATE);
         }
         this.duration = duration;

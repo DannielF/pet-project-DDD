@@ -1,7 +1,13 @@
 package co.com.sk.servicios.ventayalquiler.trolley;
 
 import co.com.sk.servicios.ventayalquiler.trolley.events.FilmAdded;
+import co.com.sk.servicios.ventayalquiler.trolley.events.FilmDescriptionUpdated;
+import co.com.sk.servicios.ventayalquiler.trolley.events.FilmDurationUpdated;
+import co.com.sk.servicios.ventayalquiler.trolley.events.FilmTitleUpdated;
 import co.com.sk.servicios.ventayalquiler.trolley.events.SeriesAdded;
+import co.com.sk.servicios.ventayalquiler.trolley.events.SeriesDescriptionUpdated;
+import co.com.sk.servicios.ventayalquiler.trolley.events.SeriesDurationUpdated;
+import co.com.sk.servicios.ventayalquiler.trolley.events.SeriesTitleUpdated;
 import co.com.sk.servicios.ventayalquiler.trolley.events.TrolleyCreated;
 import co.com.sk.servicios.ventayalquiler.trolley.values.Description;
 import co.com.sk.servicios.ventayalquiler.trolley.values.Duration;
@@ -18,6 +24,7 @@ import java.util.Map;
 
 /**
  * Trolley class - Aggregate
+ *
  * @author dannielf - riveco0120
  * @version 0.0.1
  * @since 0.0.1
@@ -25,8 +32,8 @@ import java.util.Map;
 public class Trolley extends AggregateEvent<TrolleyId> {
 
     protected TotalPrice totalPrice;
-    protected Map<SeriesId,Series> series;
-    protected Map<FilmId,Film> films;
+    protected Map<SeriesId, Series> series;
+    protected Map<FilmId, Film> films;
 
     public Trolley(TrolleyId trolleyId, TotalPrice totalPrice) {
         super(trolleyId);
@@ -53,6 +60,30 @@ public class Trolley extends AggregateEvent<TrolleyId> {
     public void addFilm(Title title, Duration duration, Description description) {
         var filmId = new FilmId("film1");
         appendChange(new FilmAdded(filmId, title, duration, description)).apply();
+    }
+
+    public void updateSeriesTitle(SeriesId seriesId, Title title) {
+        appendChange(new SeriesTitleUpdated(seriesId, title)).apply();
+    }
+
+    public void updateSeriesDuration(SeriesId seriesId, Duration duration) {
+        appendChange(new SeriesDurationUpdated(seriesId, duration)).apply();
+    }
+
+    public void updateSeriesDescription(SeriesId seriesId, Description description) {
+        appendChange(new SeriesDescriptionUpdated(seriesId, description)).apply();
+    }
+
+    public void updateFilmTitle(FilmId filmId, Title title) {
+        appendChange(new FilmTitleUpdated(filmId, title)).apply();
+    }
+
+    public void updateFilmDuration(FilmId filmId, Duration duration) {
+        appendChange(new FilmDurationUpdated(filmId, duration)).apply();
+    }
+
+    public void updateFilmDescription(FilmId filmId, Description description) {
+        appendChange(new FilmDescriptionUpdated(filmId, description)).apply();
     }
 
     public TotalPrice getTotalPrice() {
