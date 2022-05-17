@@ -23,8 +23,8 @@ public class Client extends Entity<ClientId> {
     protected Phone phone;
     protected Email email;
 
-    public Client(ClientId entityId, Name name, Phone phone, Email email) {
-        super(entityId);
+    public Client(ClientId clientId, Name name, Phone phone, Email email) {
+        super(clientId);
         this.name = Validate.notNull(name, VALIDATION_MESSAGE);
         this.phone = Validate.notNull(phone, VALIDATION_MESSAGE);
         this.email = Validate.notNull(email, VALIDATION_MESSAGE);

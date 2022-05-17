@@ -18,15 +18,19 @@ import co.com.sofka.domain.generic.EventChange;
  */
 public class ReceiptEventChange extends EventChange {
     public ReceiptEventChange(Receipt receipt) {
-        apply((ReceiptCreated event) -> receipt.date = event.date());
-
-        apply((ClientAdded event) -> {
-            receipt.client.name = event.name();
-            receipt.client.phone = event.phone();
-            receipt.client.email = event.email();
+        apply((ReceiptCreated event) -> {
+            receipt.date = event.date();
         });
 
-        apply((PaymentAdded event) -> receipt.payment.type = event.typePayment());
+        apply((ClientAdded event) -> {
+            var clientId = event.clientId();
+            receipt.client = new Client(clientId, event.name(), event.phone(), event.email());
+        });
+
+        apply((PaymentAdded event) -> {
+            var paymentId = event.paymentId();
+            receipt.payment = new Payment(paymentId, event.typePayment());
+        });
 
         apply((TypePaymentUpdated event) -> receipt.payment.updateType(event.typePayment()));
 
