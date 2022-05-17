@@ -58,7 +58,7 @@ public class Shop extends AggregateEvent<ShopId> {
     //Cambiar Direccion
     public void ChangeDirection(Direction direction){
         Objects.requireNonNull(direction);
-        appendChange(new StoreNameChanged(direction)).apply();
+        appendChange(new AddressChanged(direction)).apply();
     }
 
     public StoreName storeName() {
