@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/CreateCashierClerk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/UpdateEmployeeName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/UpdateMail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/CashierEmployeeCreated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/MailUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/UpdatedEmployeeName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/CashierEmployeeId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/CashierEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/EmployeeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/EmployeeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/ResponsibleId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/ResponsibleId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/ShopId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/values/ShopId.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

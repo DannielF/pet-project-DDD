@@ -1,4 +1,20 @@
 package co.com.sk.servicos.tienda.values;
 
-public class EmployeeName {
+import co.com.sofka.domain.generic.ValueObject;
+
+import java.util.Objects;
+
+public class EmployeeName implements ValueObject<String> {
+
+    private final String value;
+
+    public EmployeeName(String value) {
+        this.value = Objects.requireNonNull(value);
+    }
+
+
+    @Override
+    public String value() {
+        return value;
+    }
 }

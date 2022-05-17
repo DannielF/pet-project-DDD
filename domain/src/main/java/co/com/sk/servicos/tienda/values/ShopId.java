@@ -1,4 +1,6 @@
 package co.com.sk.servicos.tienda.values;
 
-public class ShopId {
+import co.com.sofka.domain.generic.Identity;
+
+public class ShopId extends Identity {
 }
