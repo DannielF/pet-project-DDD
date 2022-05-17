@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/CreateCashierClerk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/UpdateEmployeeName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/UpdateMail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/CashierEmployeeCreated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/MailUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/UpdatedEmployeeName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/commands/CreateResponsible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/tienda/events/ResponsibleCreated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
