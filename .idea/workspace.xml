@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/ChangeDirectionUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateResponsibleUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateStoreUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/UpdatedFunctionUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/shop/CreateResponsibleUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/trolley/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/trolley/Series.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/trolley/Trolley.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateCashierClerkUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/shop/CreateCashierClerkUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/templateBorrar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateCashierClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateCashierClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/ChangeDirectionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/ChangeDirectionUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateResponsibleUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/shop/CreateResponsibleUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/shop/CreateStoreUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateResponsible.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateResponsible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/CashierEmployeeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/CashierEmployeeId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/ResponsibleId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/ResponsibleId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/ShopId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/ShopId.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +73,8 @@
       <recent name="co.com.sk.servicios.shop" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="CreateResponsibleUseCaseTest.crearStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateCashierClerkUseCaseTest.createCashierClerkTest">
+    <configuration name="CreateCashierClerkUseCaseTest.createCashierClerkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -85,7 +83,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="co.com.sk.servicios.ventayalquiler.shop" />
-      <option name="MAIN_CLASS_NAME" value="co.com.sk.servicios.ventayalquiler.shop.CreateResponsibleUseCaseTest" />
+      <option name="MAIN_CLASS_NAME" value="co.com.sk.servicios.ventayalquiler.shop.CreateCashierClerkUseCaseTest" />
+      <option name="METHOD_NAME" value="createCashierClerkTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateStoreUseCaseTest.crearStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.com.sk.servicios.ventayalquiler.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.com.sk.servicios.ventayalquiler.shop" />
+      <option name="MAIN_CLASS_NAME" value="co.com.sk.servicios.ventayalquiler.shop.CreateStoreUseCaseTest" />
       <option name="METHOD_NAME" value="crearStoreTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -94,7 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateResponsibleUseCaseTest.crearStoreTest" />
+        <item itemvalue="JUnit.CreateCashierClerkUseCaseTest.createCashierClerkTest" />
+        <item itemvalue="JUnit.CreateStoreUseCaseTest.crearStoreTest" />
       </list>
     </recent_temporary>
   </component>

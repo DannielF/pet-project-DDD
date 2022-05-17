@@ -6,7 +6,6 @@ public class ShopId extends Identity {
     public ShopId(){
 
     }
-
     public ShopId(String id){
         super(id);
     }
@@ -15,3 +14,4 @@ public class ShopId extends Identity {
         return new ShopId(id);
     }
 }
+

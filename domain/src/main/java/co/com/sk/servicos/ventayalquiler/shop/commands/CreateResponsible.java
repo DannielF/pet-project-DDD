@@ -1,19 +1,18 @@
 package co.com.sk.servicos.ventayalquiler.shop.commands;
 
-import co.com.sk.servicos.ventayalquiler.shop.values.EmployeeName;
-import co.com.sk.servicos.ventayalquiler.shop.values.Function;
-import co.com.sk.servicos.ventayalquiler.shop.values.Mail;
-import co.com.sk.servicos.ventayalquiler.shop.values.ResponsibleId;
+import co.com.sk.servicos.ventayalquiler.shop.values.*;
 import co.com.sofka.domain.generic.Command;
 
 //Crear responsable
 public class CreateResponsible extends Command {
+    private final ShopId shopId;
     private final ResponsibleId entityId;
     private final EmployeeName employeeName;
     private final Mail mail;
     private final Function function;
 
-    public CreateResponsible(ResponsibleId entityId, EmployeeName employeeName, Mail mail, Function function) {
+    public CreateResponsible(ShopId shopId,ResponsibleId entityId, EmployeeName employeeName, Mail mail, Function function) {
+        this.shopId=shopId;
         this.entityId = entityId;
         this.employeeName = employeeName;
         this.mail = mail;

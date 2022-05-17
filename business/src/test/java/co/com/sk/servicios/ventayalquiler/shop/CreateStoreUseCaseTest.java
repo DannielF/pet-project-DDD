@@ -12,9 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class CreateResponsibleUseCaseTest {
+class CreateStoreUseCaseTest {
 
     private CreateStoreUseCase useCase;
 
@@ -42,7 +40,7 @@ class CreateResponsibleUseCaseTest {
         var storeCreated =(StoreCreated)events.get(0);
         Assertions.assertEquals("xxxx",storeCreated.aggregateRootId());
         Assertions.assertEquals("DolarCyty",storeCreated.getStoreName().value());
-        Assertions.assertEquals("Centro comercial florida",storeCreated.getDirection().value());
+        Assertions.assertEquals("Centro comercial florida",storeCreated.getDirection());
     }
 
 }
