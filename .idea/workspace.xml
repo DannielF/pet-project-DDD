@@ -5,43 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324ea5d4-7003-45d5-ae8e-36c563a8f0d5" name="Changes" comment="[Upd] Trolley package inside ventayalquiler package">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/AddClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/AddPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/CreateReceipt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateTypePayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientAdded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientEmailUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientNameUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientPhoneUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/PaymentAdded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ReceiptCreated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/TypePaymentUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/ClientId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/DateReceipt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Name.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/PaymentId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/ReceiptId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/trolley/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/trolley/Series.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/trolley/Trolley.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/CreateTrolleyUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/trolley/CreateTrolleyUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/EmployeeName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/StoreName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/Series.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/Trolley.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/TrolleyEventChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/AddFilm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/AddSeries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/CreateTrolley.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/UpdateFilmDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/UpdateFilmDuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/UpdateFilmTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/UpdateSeriesDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/UpdateSeriesDuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/commands/UpdateSeriesTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/FilmAdded.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/FilmDescriptionUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/FilmDurationUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/FilmTitleUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/SeriesAdded.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/SeriesDescriptionUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/SeriesDurationUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/SeriesTitleUpdated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/events/TrolleyCreated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/Description.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/Duration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/FilmId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/SeriesId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/Title.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/TotalPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/trolley/values/TrolleyId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/trolley/Film.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/trolley/Series.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/trolley/Trolley.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateResponsibleUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateResponsibleUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateStoreUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CreateStoreUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/receipt/CreateReceiptUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/shop/CreateStoreUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/test/java/co/com/sk/servicios/ventayalquiler/shop/CreateStoreUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/CreateResponsible.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/CreateResponsible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/ReceiptEventChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/ReceiptEventChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/AddClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/AddClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/AddPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/AddPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/CreateReceipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/CreateReceipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/UpdateClientEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientName.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/UpdateClientName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateClientPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/UpdateClientPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/commands/UpdateTypePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/commands/UpdateTypePayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/ClientAdded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientEmailUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/ClientEmailUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientNameUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/ClientNameUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ClientPhoneUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/ClientPhoneUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/PaymentAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/PaymentAdded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/ReceiptCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/ReceiptCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/events/TypePaymentUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/events/TypePaymentUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/ClientId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/ClientId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/DateReceipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/DateReceipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/PaymentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/PaymentId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/ReceiptId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/ReceiptId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/receipt/values/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/receipt/values/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/CashierEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/CashierEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/Responsible.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/Responsible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/ShopChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/ShopChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/ChangeDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/ChangeDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/ChangeStoreName.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/ChangeStoreName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateCashierClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/CreateCashierClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateResponsible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/CreateStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/CreateStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/UpdatedFunctionCashierClerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/UpdatedFunctionCashierClerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/commands/UpdatedFunctionResponsible.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/commands/UpdatedFunctionResponsible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/AddressChanged.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/AddressChanged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/CashierEmployeeAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/CashierEmployeeAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/FunctionCajeroUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/FunctionCajeroUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/FunctionResponsibleUpdated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/FunctionResponsibleUpdated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/ResponsibleAdded.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/ResponsibleAdded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/StoreCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/StoreCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/events/StoreNameChanged.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/events/StoreNameChanged.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/CashierEmployeeId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/CashierEmployeeId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/Direction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/EmployeeName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/Mail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/ResponsibleId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/ResponsibleId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/ShopId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicios/ventayalquiler/shop/values/ShopId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/shop/values/StoreName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/trolley/Film.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/trolley/Series.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/co/com/sk/servicos/ventayalquiler/trolley/Trolley.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
