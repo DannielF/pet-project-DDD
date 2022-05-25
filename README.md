@@ -1,5 +1,7 @@
 ## Welcome to our pet project done with DDD
 
+#Integrantes : Richard Vellojin Coneo y Daniel Granados
+
 * Java
 * DDD
 * Maven
